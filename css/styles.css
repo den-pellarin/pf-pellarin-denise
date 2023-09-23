@@ -80,7 +80,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  justify-content: flex-start;
   align-items: center;
   background-color: #5F7470;
 }
@@ -92,12 +91,20 @@ body {
   font-weight: 400;
   color: #E8EAD9;
 }
+.bn-principal .bn-img {
+  width: 50%;
+  vertical-align: middle;
+  overflow: hidden;
+}
 
 /* Mq para móviles (ancho máximo de 768px) */
 @media (max-width: 768px) {
   .bn-principal {
     flex-direction: column;
     gap: 0px;
+  }
+  .bn-principal .bn-img {
+    width: 100%;
   }
 }
 .secundario {

@@ -10,6 +10,11 @@
             color: $secondary-300;
         }
     }
+    .bn-img{
+        width: 50%;
+        vertical-align: middle;
+        overflow: hidden;
+    }
 }
 
 /* Mq para móviles (ancho máximo de 768px) */
@@ -17,6 +22,8 @@
     .bn-principal{
         flex-direction: column;
         gap: 0px;
+        .bn-img{
+            width: 100%;
+        }
     }
-    
 }
