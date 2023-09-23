@@ -1,0 +1,31 @@
+/* Formulario de contacto*/
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    .col-uno{
+        padding: 2rem;
+        .boton{
+            background-color: $primary-500;
+            color: $neutrals-white;
+        }
+        .boton a:active{
+            background-color: $primary-600;
+        }
+    }
+    .col-dos{
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .contact{
+        flex-direction: column-reverse;
+        .col-dos{
+            width: 100%;
+            height: 300px;
+        }
+    }
+}

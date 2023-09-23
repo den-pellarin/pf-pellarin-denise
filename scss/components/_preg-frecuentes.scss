@@ -1,0 +1,24 @@
+/* preguntas frecuentes */
+.preg-frecuentes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem 2rem 4rem 2rem;
+    .accordion-button:not(.collapsed) {
+        background-color: $primary-300;
+        color: $primary-600;
+    }
+    .accordion-button:focus {
+        color: $primary-600;
+    }
+    .accordion-item {
+        color: $neutrals-gray-700;
+    }
+}
+
+/* Mq para móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .preg-frecuentes{
+        padding: 0rem 0rem 4rem 0rem ;
+    }
+}

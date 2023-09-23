@@ -1,0 +1,35 @@
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    .nos-uno{
+        padding: 2rem;
+        text-align: left;
+        width: 50%;
+    }
+    .nos-dos{
+        width: 50%;
+        overflow: hidden;
+        img{
+            height: 100%;
+        }
+    }
+}
+
+/* Mq para móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    .nosotros{
+        flex-direction: column-reverse;
+        .nos-dos{
+            display: none;
+        }
+        .nos-uno{
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+}
